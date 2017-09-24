@@ -1,6 +1,6 @@
 {
   "name": "genel",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Tagged template literal utility for generating html elements.",
   "main": "dist.js",
   "scripts": {
