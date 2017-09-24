@@ -1,0 +1,40 @@
+{
+  "name": "genel",
+  "version": "0.1.0",
+  "description": "Tagged template literal utility for generating html elements.",
+  "main": "dist.js",
+  "scripts": {
+    "test": "kocha test.js",
+    "dist": "browserify -t babelify -s genel index.js | uglifyjs -c -m > dist.js",
+    "size": "npm run dist && gzip-size dist.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capsidjs/genel.git"
+  },
+  "keywords": [
+    "dom",
+    "element",
+    "html",
+    "tagged-template-literal",
+    "utility"
+  ],
+  "author": "Yoshiya Hinosawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capsidjs/genel/issues"
+  },
+  "homepage": "https://github.com/capsidjs/genel#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-power-assert": "^1.0.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "gzip-size-cli": "^2.1.0",
+    "html-tags": "^2.0.0",
+    "kocha": "^1.8.1",
+    "power-assert": "^1.4.4",
+    "standard": "^10.0.3",
+    "uglify-js": "^3.1.2"
+  }
+}
