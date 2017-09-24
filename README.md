@@ -8,7 +8,7 @@
 
 Install via npm:
 
-    npm i genel --save
+    npm i --save genel
 
 And require it (by using [webpack][], [browserify][], [pundle][], [fuse-box][] etc) if you prefer using bundler.
 
@@ -44,11 +44,19 @@ const div = genel.div`
 `
 ```
 
-`genel.<tagName>` works as a tag function for [tagged template literal][tagged-template-literal]. It creates dom element of `<tagName>` and its innerHTML is the string inside the quotes. For example the above is equivalent of:
+`genel.<tagName>` works as a tag function for [tagged template literal][tagged-template-literal]. It creates dom element of `<tagName>` and its innerHTML is the string inside the quotes. For example, the above is equivalent of:
 
 ```js
 const div = document.createElement('div')
 div.innerHTML = '<h1>Hello, world!</h1>'
+```
+
+And therefore it's equivalent of the below as dom object:
+
+```html
+<div>
+  <h1>Hello, world!</h1>
+</div>
 ```
 
 That's it!
@@ -180,7 +188,7 @@ genel.wbr``
 
 # Non standard tags
 
-To use genel with any tag name:
+To use genel with any tag name, call `genel` as a function and you'll get the tag function of the given name:
 
 ```js
 const customTag = genel('x-custom-tag')
@@ -201,7 +209,7 @@ customEl.innerHTML = `
 
 And therefore equivalent of:
 
-```js
+```html
 <x-custom-tag>
   <p>Hey, this is the contents of custom tag!</p>
 </x-custom-tag>
