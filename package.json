@@ -4,10 +4,10 @@
   "description": "Tagged template literal utility for generating html elements.",
   "main": "dist.js",
   "scripts": {
-    "test": "kocha test.js",
+    "test": "npm run dist && kocha test.js",
     "lint": "standard",
     "fix": "standard --fix",
-    "dist": "browserify -t babelify -s genel index.js | uglifyjs -c -m > dist.js",
+    "dist": "rollup --config rollup.config.js | uglifyjs -c -m > dist.js",
     "size": "npm run dist && gzip-size dist.js --raw"
   },
   "repository": {
@@ -28,15 +28,13 @@
   },
   "homepage": "https://github.com/capsidjs/genel#readme",
   "devDependencies": {
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-power-assert": "^1.0.0",
-    "babelify": "^7.3.0",
-    "browserify": "^14.4.0",
     "gzip-size-cli": "^2.1.0",
     "html-tags": "^2.0.0",
     "jsdom": "^11.2.0",
     "kocha": "^1.8.1",
     "power-assert": "^1.4.4",
+    "rollup": "^0.50.0",
+    "rollup-plugin-buble": "^0.16.0",
     "standard": "^10.0.3",
     "uglify-js": "^3.1.2"
   },

@@ -1,7 +1,7 @@
 const { JSDOM } = require('jsdom')
 const { describe, it } = require('kocha')
 const assert = require('assert')
-const genel = require('./index')
+const genel = require('./')
 const tags = require('html-tags')
 
 const window = new JSDOM().window
