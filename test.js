@@ -29,7 +29,7 @@ describe('genel', () => {
 
     it('generates a dom element of <tagName> and the given contents', () => {
       tags.forEach(tag => {
-        const el = genel(tag)`abc`
+        const el = genel[tag]`abc`
 
         if (tag === 'colgroup' || tag === 'html') { // These tags seem unable to contain `abc` as innerHTML
           return
@@ -39,6 +39,12 @@ describe('genel', () => {
         assert(el.tagName.toLowerCase() === tag)
         assert(el.innerHTML === 'abc')
       })
+    })
+
+    it('handles ${} correctly', () => {
+      const el = genel.div`abc${1}def${'ghi'}jkl`
+
+      assert(el.innerHTML === 'abc1defghijkl')
     })
   })
 })
