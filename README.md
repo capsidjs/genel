@@ -2,7 +2,7 @@
 
 > [Tagged template literal][tagged-template-literal] utility for **gen**erating html **el**ements.
 
-`genel` is a small utility (643 bytes gzipped) for generating dom elements in browser.
+`genel` is a small utility (610 bytes gzipped) for generating dom elements in browser.
 
 # Usage
 

@@ -1,6 +1,6 @@
-const genel = tagName => (strings, ...values) => {
+const genel = tagName => function (strings) {
   const el = document.createElement(tagName)
-  el.innerHTML = strings.map((str, i) => str + (values[i] || '')).join('')
+  el.innerHTML = strings.map((str, i) => str + (arguments[i + 1] || '')).join('')
   return el
 }
 
