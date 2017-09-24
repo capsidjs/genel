@@ -1,8 +1,8 @@
 # genel v0.1.0
 
-> [Tagged template literal][tagged-template-literal] utility for *gen*erating html *el*ements.
+> [Tagged template literal][tagged-template-literal] utility for **gen**erating html **el**ements.
 
-`genel` is a small utility (1.0 KB gzipped) for generating dom elements in browser.
+`genel` is a small utility (927 bytes gzipped) for generating dom elements in browser.
 
 # Usage
 

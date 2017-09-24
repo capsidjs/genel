@@ -5,8 +5,10 @@
   "main": "dist.js",
   "scripts": {
     "test": "kocha test.js",
+    "lint": "standard",
+    "fix": "standard --fix",
     "dist": "browserify -t babelify -s genel index.js | uglifyjs -c -m > dist.js",
-    "size": "npm run dist && gzip-size dist.js"
+    "size": "npm run dist && gzip-size dist.js --raw"
   },
   "repository": {
     "type": "git",
@@ -32,9 +34,15 @@
     "browserify": "^14.4.0",
     "gzip-size-cli": "^2.1.0",
     "html-tags": "^2.0.0",
+    "jsdom": "^11.2.0",
     "kocha": "^1.8.1",
     "power-assert": "^1.4.4",
     "standard": "^10.0.3",
     "uglify-js": "^3.1.2"
+  },
+  "standard": {
+    "ignore": [
+      "dist.js"
+    ]
   }
 }
