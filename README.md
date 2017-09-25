@@ -1,4 +1,4 @@
-# genel v1.1.0
+# genel v1.1.1
 
 > [Tagged template literal][tagged-template-literal] utility for **gen**erating html **el**ements.
 
