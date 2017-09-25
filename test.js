@@ -16,6 +16,16 @@ describe('genel', () => {
     assert(el.innerHTML === 'abc')
   })
 
+  it('returns the first child of inner html contents if called as tag function', () => {
+    const el = genel`
+      <div>hello</div><p>world</p>
+    `
+
+    assert(el instanceof window.HTMLElement)
+    assert(el.tagName.toLowerCase() === 'div')
+    assert(el.innerHTML === 'hello')
+  })
+
   describe('genel.<tagName>', () => {
     it('exists if and only if <tagName> is a standard tag', () => {
       tags.forEach(tag => {
@@ -45,6 +55,12 @@ describe('genel', () => {
       const el = genel.div`abc${1}def${'ghi'}jkl`
 
       assert(el.innerHTML === 'abc1defghijkl')
+    })
+
+    it('trims innerHTML', () => {
+      const el = genel.div`   abc    `
+
+      assert(el.innerHTML === 'abc')
     })
   })
 })

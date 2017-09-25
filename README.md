@@ -2,7 +2,7 @@
 
 > [Tagged template literal][tagged-template-literal] utility for **gen**erating html **el**ements.
 
-`genel` is a small utility (610 bytes gzipped) for generating dom elements in browser.
+`genel` is a small utility (650 bytes gzipped) for generating dom elements in browser.
 
 # Usage
 
@@ -216,6 +216,20 @@ And therefore equivalent of:
 ```
 
 Enjoy! :sunglasses:
+
+# `genel` as tag function
+
+`genel` itself works as the tag function and it returns the contents as html dom:
+
+```js
+const el = genel`
+  <div>
+    <p>Hello, world!</p>
+  </div>
+`
+```
+
+The above returns a dom element equivalent of `<div><p>Hello, world!</p></div>`.
 
 # License
 
