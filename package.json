@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/capsidjs/genel#readme",
   "devDependencies": {
-    "gzip-size-cli": "^2.1.0",
+    "gzip-size-cli": "^3.0.0",
     "html-tags": "^2.0.0",
     "jsdom": "^11.2.0",
     "kocha": "^1.8.1",

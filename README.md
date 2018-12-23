@@ -2,6 +2,9 @@
 
 > [Tagged template literal][tagged-template-literal] utility for **gen**erating html **el**ements.
 
+[![CircleCI](https://circleci.com/gh/capsidjs/genel.svg?style=svg)](https://circleci.com/gh/capsidjs/genel)
+[![gzip size](https://img.badgesize.io/capsidjs/genel/master/dist.js.svg?compression=gzip)](https://github.com/capsidjs/genel/blob/master/dist.js)
+
 `genel` is a small utility (640 bytes gzipped) for generating dom elements in browser.
 
 # Usage
