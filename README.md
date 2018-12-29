@@ -6,7 +6,7 @@
 [![gzip size](https://img.badgesize.io/capsidjs/genel/master/dist.js.svg?compression=gzip)](https://github.com/capsidjs/genel/blob/master/dist.js)
 [![Greenkeeper badge](https://badges.greenkeeper.io/capsidjs/genel.svg)](https://greenkeeper.io/)
 
-`genel` is a small utility (640 bytes gzipped) for generating dom elements in browser.
+`genel` is a small utility (649 bytes gzipped) for generating dom elements in browser.
 
 # Usage
 
