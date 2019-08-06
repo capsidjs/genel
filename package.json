@@ -33,7 +33,7 @@
     "jsdom": "^15.0.0",
     "kocha": "^1.8.1",
     "power-assert": "^1.4.4",
-    "rollup": "^1.10.1",
+    "rollup": "^1.19.2",
     "rollup-plugin-buble": "^0.19.6",
     "standard": "^13.0.1",
     "uglify-js": "^3.1.2"
