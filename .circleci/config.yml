@@ -8,9 +8,9 @@ jobs:
       - restore_cache:
           keys:
             - v1-npm-{{ checksum "package.json" }}
-      - run: npm i
+      - run: yarn
       - save_cache:
           paths:
             - node_modules
           key: v1-npm-{{ checksum "package.json" }}
-      - run: npm test
+      - run: yarn test
