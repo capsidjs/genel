@@ -118,6 +118,7 @@ genel.h5``
 genel.h6``
 genel.head``
 genel.header``
+genel.hgroup``
 genel.hr``
 genel.html``
 genel.i``
@@ -126,7 +127,6 @@ genel.img``
 genel.input``
 genel.ins``
 genel.kbd``
-genel.keygen``
 genel.label``
 genel.legend``
 genel.li``
@@ -162,6 +162,7 @@ genel.samp``
 genel.script``
 genel.section``
 genel.select``
+genel.slot``
 genel.small``
 genel.source``
 genel.span``
