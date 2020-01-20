@@ -30,7 +30,7 @@
   "devDependencies": {
     "gzip-size-cli": "^3.0.0",
     "html-tags": "~3.1.0",
-    "jsdom": "^15.0.0",
+    "jsdom": "^16.0.1",
     "kocha": "^1.8.1",
     "power-assert": "^1.4.4",
     "rollup": "^1.27.4",
